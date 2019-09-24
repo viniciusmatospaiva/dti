@@ -11,6 +11,7 @@ namespace dtijarvisbot
     {
         public static ComposeExtensionResponse HandleMessageExtensionQuery(ConnectorClient connector, Activity activity)
         {
+            ///teste
             var query = activity.GetComposeExtensionQueryData();
             if (query == null || query.CommandId != "getRandomText")
             {
